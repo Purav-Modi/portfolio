@@ -1,5 +1,8 @@
-import HomePage from "../../components/HomePage";
+import "./globals.scss";
 
-export default function Home() {
+import HomePage from "../../components/home/HomePage";
+
+const Home = () => {
   return <HomePage />;
-}
+};
+export default Home;
