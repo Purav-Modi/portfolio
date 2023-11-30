@@ -3,7 +3,7 @@ $screen-sm-max: 767px;
 $screen-md-min: 768px;
 $screen-md-max: 991px;
 $screen-lg-max: 1199px;
-$screen-desktop-lg-max: 1365px;
+$screen-desktop-lg-max: 1600px;
 
 // Mobile devices
 @mixin mobile {
@@ -39,7 +39,7 @@ $screen-desktop-lg-max: 1365px;
 }
 // Laptop devices
 @mixin desktop_laptop {
-    @media (max-width: #{$screen-desktop-lg-max}) {
+    @media (min-width: #{$screen-desktop-lg-max}) {
         @content;
     }
 }

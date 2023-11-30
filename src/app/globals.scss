@@ -1,4 +1,7 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
 @import "./source/variable";
+@import "./source/mixin";
 
 * {
   box-sizing: border-box;
@@ -12,9 +15,36 @@ body {
   overflow-x: hidden;
   background-color: $black;
   color: $white;
+  font-family: "Poppins", sans-serif !important;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+input,
+button,
+div {
+  font-family: "Poppins", sans-serif !important;
+}
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  @include container(576px, 540px);
+  @include container(768px, 720px);
+  @include container(992px, 960px);
+  @include container(1200px, 1140px);
 }
