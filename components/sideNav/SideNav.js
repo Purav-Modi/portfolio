@@ -1,5 +1,6 @@
 import React from "react";
 import "./sideNav.scss";
+import Link from "next/link";
 
 const SideNav = () => {
   const navItems = [
@@ -29,12 +30,14 @@ const SideNav = () => {
     <div className="side-menu">
       <ul className="nav-group">
         {navItems?.map((item, index) => (
-          <li key={index} className="menu-item">
-            <a href="#">
+          <Link
+            href={`/${item.name === "Home" ? "" : item.name.toLowerCase()}`}
+          >
+            <li key={index} className="menu-item">
               {item.icon}
               <span>{item.name}</span>
-            </a>
-          </li>
+            </li>
+          </Link>
         ))}
       </ul>
     </div>

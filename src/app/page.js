@@ -1,12 +1,6 @@
 import HomePage from "../../components/home/HomePage";
-import SideNav from "../../components/sideNav/SideNav";
 
 const Home = () => {
-  return (
-    <>
-      <HomePage />
-      <SideNav />
-    </>
-  );
+  return <HomePage />;
 };
 export default Home;
