@@ -1,0 +1,25 @@
+.custom-title {
+    padding-bottom: 22px;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+    & li {
+        flex: 0 0 50%;
+        max-width: 50%;
+        &:not(:last-child) {
+            padding-bottom: 20px;
+        }
+        & .title {
+            opacity: 0.8;
+            text-transform: capitalize;
+            margin-right: 3px;
+        }
+        & .value {
+            font-weight: 600;
+        }
+    }
+}
