@@ -1,4 +1,4 @@
-$screen-xsm-max: 374px;
+$screen-xsm-max: 575px;
 $screen-sm-max: 767px;
 $screen-md-min: 768px;
 $screen-md-max: 991px;
@@ -7,41 +7,41 @@ $screen-desktop-lg-max: 1600px;
 
 // Mobile devices
 @mixin mobile {
-    @media (max-width: #{$screen-sm-max}) {
-        @content;
-    }
+@media (max-width: #{$screen-sm-max}) {
+@content;
+}
 }
 // Mobile_Small devices
 @mixin small_mobile {
-    @media (max-width: #{$screen-xsm-max}) {
-        @content;
-    }
+@media (max-width: #{$screen-xsm-max}) {
+@content;
+}
 }
 // Desktop devices
 @mixin desktop {
-    @media (min-width: #{$screen-md-min}) {
-        @content;
-    }
+@media (min-width: #{$screen-md-min}) {
+@content;
+}
 }
 
 // iPad Portrait devices
 @mixin ipad {
-    @media (max-width: #{$screen-md-max}) {
-        @content;
-    }
+@media (max-width: #{$screen-md-max}) {
+@content;
+}
 }
 
 // Laptop devices
 @mixin laptop {
-    @media (max-width: #{$screen-lg-max}) {
-        @content;
-    }
+@media (max-width: #{$screen-lg-max}) {
+@content;
+}
 }
 // Laptop devices
 @mixin desktop_laptop {
-    @media (min-width: #{$screen-desktop-lg-max}) {
-        @content;
-    }
+@media (min-width: #{$screen-desktop-lg-max}) {
+@content;
+}
 }
 
 // Use guidance

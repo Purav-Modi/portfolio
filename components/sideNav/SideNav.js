@@ -30,14 +30,14 @@ const SideNav = () => {
     <div className="side-menu">
       <ul className="nav-group">
         {navItems?.map((item, index) => (
-          <Link
-            href={`/${item.name === "Home" ? "" : item.name.toLowerCase()}`}
-          >
-            <li key={index} className="menu-item">
+          <li key={index} className="menu-item">
+            <Link
+              href={`/${item.name === "Home" ? "" : item.name.toLowerCase()}`}
+            >
               {item.icon}
               <span>{item.name}</span>
-            </li>
-          </Link>
+            </Link>
+          </li>
         ))}
       </ul>
     </div>
